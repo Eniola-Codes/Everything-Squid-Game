@@ -1,0 +1,397 @@
+/*Adding google fonts (Poppins)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Setting up variables*/
+:root
+{
+    --squidcolor: #E84181;
+    --white: #FFFFFF;
+}
+
+/*Setting universal properties*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif, serif;
+}
+
+/*setting up html and body properties*/
+html,body
+{
+    overflow:hidden;
+}
+
+body
+{
+    background-image: url(Background.png);
+    background-size: cover;    
+    position: relative;
+}
+
+/*Setting background images*/
+img.backimg1 , img.backimg2
+{
+    position: absolute;
+}
+
+img.backimg1
+{
+    width: 50vw;
+    left: 55vw;
+    top: 45vh;
+}
+
+img.backimg2
+{
+    width: 30vw;
+}
+
+/*Styling the navbar*/
+nav.properties
+{
+    background-color: rgba(0,0,0,0) !important;
+    padding-top: 3vh;
+}
+
+a.navbar-brand
+{
+    margin-left: 5vw ;
+}
+
+div.nav-options
+{
+    margin-right: 7vw;
+}
+
+li.nav-item a.nav-option-property
+{
+    color: var(--white) !important;
+    font-size: 18px;
+}
+
+div.active-indicator1
+{
+    width: 10px;
+    height: 10px;
+    background-color: var(--squidcolor);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0%;
+    transition: 0.3s ease !important;
+}
+
+div.active-indicator2
+{
+width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--squidcolor);
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0%;
+  transition: 0.3s ease !important;
+}
+
+div.active-indicator3
+{
+    width: 10px;
+    height: 10px;
+    background-color: var(--squidcolor);
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0%;
+    transition: 0.3s ease !important;
+} 
+
+div.active-indicator4
+{
+    width: 10px; 
+    height: 10px;
+    background-color: var(--squidcolor);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0%;
+    transition: 0.3s ease !important;
+}
+
+a.nav-link img.search:hover
+{
+    transform: scale(1.2);
+}
+
+div.active-control1:hover > div.active-indicator1, div.active-control2:hover > div.active-indicator2,div.active-control3:hover > div.active-indicator3,div.active-control4:hover > div.active-indicator4
+{
+opacity: 100%;
+}
+
+
+/*Styling the landing page*/
+div.row div.left-split
+{
+    padding-left: 10vw;
+    padding-right: 8.3vw;
+    min-height: 100vh;
+}
+div.row div.right-split
+{
+    padding-left: 10vw;
+    padding-right: 8.3vw;
+    padding-top: 20vh;
+    min-height: 100vh;
+}
+
+img.squid-game-head
+{
+    padding-top: 15vh;
+}
+
+p.squid-game-text
+{
+    color: var(--white);
+    font-size:18px;
+    padding-top: 2vh;
+}
+
+button.btn-style
+{
+    padding: 10px 50px 10px 50px;
+    background-color: var(--squidcolor);
+    color: var(--white);
+    font-size:24px;
+    font-weight:600;
+    border-radius:30px;
+    display: block;
+    transition: 0.5s ease !important;
+}
+
+button.btn-style:hover
+{
+    background-color: var(--white) ;
+    color: var(--squidcolor) ;
+}
+
+div.pinkblur-bg
+{
+    position: absolute;
+    left: 5vw;
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background: rgba(231, 63, 126, 0.25);
+filter: blur(100px);
+}
+
+div.pinkblur-bg2
+{
+    position: absolute;
+    left: 25vw;
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background: rgba(231, 63, 126, 0.25);
+filter: blur(100px);
+}
+
+div.move-wrapper
+{
+    display: inline-block;
+    padding-top:20vh;
+    padding-bottom: 5vh;
+}
+
+div.wrapper-bg
+{
+    background:linear-gradient(132.97deg, rgba(233,79,134,0.8) 1%, rgba(155,111,238,0.1) 20%, rgba(123,127,234, 0.02) 85%, #E95088 99%);
+    width: 220px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+div.item-bg
+{
+    background:linear-gradient(132.97deg, rgba(171, 213, 250, 0.5) 2.84%, rgba(65, 48, 90, 0.03) 99.04%);
+    width: 220px;
+    height: 120px;
+    border-radius: 20px;
+    transform: scale(0.99);
+}
+
+img.squiditem-img
+{
+    position: relative;
+    top: -3.3vh;
+}
+
+span.squiditem-imgtext
+{
+    color: var(--white);
+    float: right;
+}
+
+span a.squiditem-link
+{
+    font-size:12px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5 ease !important;
+}
+
+span a.squiditem-link:hover{
+    color : var(--squidcolor);
+}
+
+span.squiditem-imgtext
+{
+    position: relative;
+    top: 25px;
+    left: -10px;
+}
+
+img.scroll-down
+{
+    position: fixed;
+    right: 7vw;
+    bottom: 12vh;
+    cursor: pointer;
+}
+
+img.squidgame-soldiers
+{
+    position: relative;
+    z-index:1;
+}
+div.board
+{
+    display: none;
+}
+
+@media only screen and 
+(max-width : 1400px)
+and (max-height : 800px)
+{
+
+
+    nav.properties
+{
+    padding-top: 1vh;
+}
+
+    div.row div.left-split
+{
+    padding-left: 5vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+}
+
+div.row div.right-split
+{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 15vh;
+}
+
+p.squid-game-text
+{
+    padding-top: 0vh;
+}
+
+img.squid-game-head
+{
+    padding-top: 10vh;
+}
+
+div.nav-options
+{
+    margin-right: 5vw;
+}
+
+div.move-wrapper
+{
+    padding-top:10vh;
+    padding-bottom: 5vh;
+}
+
+img.scroll-down
+{
+    bottom: 5vh;
+}
+
+}
+
+/*Settin up media queries to improve responsiveness on various screen sizes*/
+@media only screen and 
+(max-width : 1400px)
+{
+    div.row div.left-split
+    {
+        padding-left: 5vw;
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+    }    
+}
+
+@media only screen and
+(max-width: 767px)
+{
+div.row div.left-split
+{
+    display:none;
+}
+
+div.row div.right-split
+{
+    padding-top: 5vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.navbar-brand
+{
+    margin-left: auto ;
+    margin-right:auto;
+}
+
+button.navbar-toggler
+{
+    display: none;
+}
+
+img.scroll-down
+{
+display: none;
+}
+
+div.board
+{
+    display:block;
+    position:absolute;
+    bottom:3vh;
+    z-index:2;
+    width: 90vw;
+    height: auto;
+    background: linear-gradient(132.97deg, rgba(255, 255, 255, 0.3) 2.84%, rgba(255,255, 255, 0.3) 99.04%);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+button.btn-style
+{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 10px;
+    padding-right: 20vw;;
+    padding-left: 20vw;
+}
+
+}
+
